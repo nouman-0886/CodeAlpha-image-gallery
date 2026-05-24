@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="./assets/favicon-v2-icon.png">
+</head>
+
+<body>
+
+    <div class="main-containor">
+        <div class="hamburger">
+            <img src="assets/burger-menu-svgrepo-com.svg" alt="menu" srcset="">
+        </div>
+        <nav class="navbar">
+            <img class="close-nav" src="assets/icons8-multiply-64white.png" alt="close-nav">
+
+            <div class="categories">
+                <ul>
+                    <li class="parent-li" data-filter="Car">Cars
+                        <!-- <div class="child-div">
+                            <div class="child" data-filter="Bmw">Bmw</div>
+                            <div class="child" data-filter="Audi">Audi</div>
+                            <div class="child" data-filter="Aorche">Porche</div>
+                            <div class="child" data-filter="Toyota">Toyota</div>
+                        </div> -->
+                    </li>
+                    <li class="parent-li" data-filter="Nature">Nature
+                        <!-- <div class="child-div">
+                            <div class="child">Forests</div>
+                            <div class="child">Mountains</div>
+                            <div class="child">Water Fall</div>
+                        </div> -->
+                    </li>
+                    <li class="parent-li" data-filter="Historical">History/Histirical
+                        <!-- <div class="child-div">
+                            <div class="child">Pakistan</div>
+                            <div class="child">India</div>
+                            <div class="child">Turkey</div>
+                            <div class="child">Saudia Arabia</div>
+                        </div> -->
+                    </li>
+                    <li class="parent-li" data-filter="Culture">Culture
+                        <!-- <div class="child-div">
+                            <div class="child">Muslim</div>
+                            <div class="child">Christanity</div>
+                            <div class="child">Hindusim</div>
+                        </div> -->
+                    </li>
+                    <li class="parent-li" data-filter="Festival">Festival
+                        <!-- <div class="child-div">
+                            <div class="child">Muslim Festivals</div>
+                            <div class="child">Christan Festivals</div>
+                            <div class="child">Hindusim Festivals</div>
+                            <div class="child">Jwish Festivals</div>
+                            <div class="child">Sikh Festivals</div>
+                        </div> -->
+                    </li>
+                </ul>
+            </div>
+            <div class="search">
+                <input for="search" type="text" placeholder="Search Category" >
+                <img id="search" src="assets/magnifying-glass-solid-full.svg" alt="search" srcset="">
+            </div>
+        </nav>
+        <div class="containor">
+            <div class="head-div">
+                <h2 class="main-head"> <span> </span> Gallery</h2>
+            </div>
+            <div class="card" data-category="Culture">
+                <img src="assets/culture/1.jpg" alt="img-1-culture">
+                <h2>Cultural</h3>
+                    <p>
+                        <span>Culture</span> represents the way of life of different communities, including
+                        <span>languages, traditions, clothing, beliefs, art, and social customs</span>
+                        passed from one generation to another through
+                        <span>human interaction and heritage.</span>
+                    </p>
+            </div>
+            <div class="card nature" data-category="Festival">
+                <img src="assets/festival/12.jpg" alt="img-1-festival">
+                <h2>Festivals</h3>
+                    <p>
+                        <span>Festivals</span> are cultural and religious celebrations that bring people together
+                        through
+                        <span>traditions, music, food, rituals, and joyful events</span>
+                        representing the spirit and values of different
+                        <span>communities and societies.</span>
+                    </p>
+            </div>
+            <div class="card history" data-category="Historical">
+                <img src="assets/historical/photo-sand.jpg" alt="img-1-history">
+                <h2>Historical</h3>
+                    <p>
+                        <span>History</span> reflects the story of human civilization, including
+                        <span>ancient empires, monuments, wars, cultures, and historical events</span>
+                        that shaped the modern world through
+                        <span>time and human achievements.</span>
+                    </p>
+            </div>
+            <div class="card nature" data-category="Nature">
+                <img src="assets/nature/premium_photo-1719943510748-4b4354fbcf56.jpg" alt="img-11-nature">
+                <h2>Nature</h3>
+                    <p>
+                        <span>Nature</span> includes the beauty and diversity of the natural world, featuring
+                        <span>forests, mountains, rivers, wildlife, oceans, and changing weather</span>
+                        that exist and grow without direct
+                        <span>human influence or creation.</span>
+                    </p>
+            </div>
+            <div class="card history" data-category="Historical">
+                <img src="assets/historical/premium_photo-1.jpg" alt="img-14-history">
+                <h2>Historical</h3>
+                    <p>
+                        <span>History</span> reflects the story of human civilization, including
+                        <span>ancient empires, monuments, wars, cultures, and historical events</span>
+                        that shaped the modern world through
+                        <span>time and human achievements.</span>
+                    </p>
+            </div>
+            <div class="card" data-category="Car">
+                <img src="assets/car/bmw/photo-15.png" alt="img-1">
+                <h2>BMW</h3>
+                    <p>
+                        <span>BMW</span> is a German luxury automobile brand known for its
+                        <span>high performance, elegant design, advanced engineering, and sporty driving
+                            experience</span>.
+                        One of its iconic features is the
+                        <span>“Devil Eyes” headlights</span>, glowing circular lights that give BMW cars an aggressive
+                        and distinctive appearance.
+                    </p>
+            </div>
+            <div class="card" data-category="Culture">
+                <img src="assets/culture/2.jpg" alt="img-2-culture">
+                <h2>Cultural</h3>
+                    <p>
+                        <span>Culture</span> represents the way of life of different communities, including
+                        <span>languages, traditions, clothing, beliefs, art, and social customs</span>
+                        passed from one generation to another through
+                        <span>human interaction and heritage.</span>
+                    </p>
+            </div>
+            <div class="card history" data-category="Historical">
+                <img src="assets/historical/pak-1.jpg" alt="img-2-history">
+                <h2>Historical</h3>
+                    <p>
+                        <span>History</span> reflects the story of human civilization, including
+                        <span>ancient empires, monuments, wars, cultures, and historical events</span>
+                        that shaped the modern world through
+                        <span>time and human achievements.</span>
+                    </p>
+            </div>
+            <div class="card nature" data-category="Nature">
+                <img src="assets/nature/pexels-akshansh-singh-2197107-16142865.jpg" alt="img-1-nature">
+                <h2>Nature</h3>
+                    <p>
+                        <span>Nature</span> includes the beauty and diversity of the natural world, featuring
+                        <span>forests, mountains, rivers, wildlife, oceans, and changing weather</span>
+                        that exist and grow without direct
+                        <span>human influence or creation.</span>
+                    </p>
+            </div>
+            <div class="card history" data-category="Historical">
+                <img src="assets/historical/pexels-photo-8319462.jpeg" alt="img-13-history">
+                <h2>Historical</h3>
+                    <p>
+                        <span>History</span> reflects the story of human civilization, including
+                        <span>ancient empires, monuments, wars, cultures, and historical events</span>
+                        that shaped the modern world through
+                        <span>time and human achievements.</span>
+                    </p>
+            </div>
+            <div class="card nature" data-category="Festival">
+                <img src="assets/festival/11.jpg" alt="img-2-festival">
+                <h2>Festivals</h3>
+                    <p>
+                        <span>Festivals</span> are cultural and religious celebrations that bring people together
+                        through
+                        <span>traditions, music, food, rituals, and joyful events</span>
+                        representing the spirit and values of different
+                        <span>communities and societies.</span>
+                    </p>
+            </div>
+            <div class="card" data-category="Culture">
+                <img src="assets/culture/240_F_1699811011_6wLnfxbCPFiMH6CuJHyeeEGZA1wTYCZl.jpg" alt="img-3-culture">
+                <h2>Cultural</h3>
+                    <p>
+                        <span>Culture</span> represents the way of life of different communities, including
+                        <span>languages, traditions, clothing, beliefs, art, and social customs</span>
+                        passed from one generation to another through
+                        <span>human interaction and heritage.</span>
+                    </p>
+            </div>
+            <div class="card nature" data-category="Nature">
+                <img src="assets/nature/pexels-dudubangbang-29028514.jpg" alt="img-2-nature">
+                <h2>Nature</h3>
+                    <p>
+                        <span>Nature</span> includes the beauty and diversity of the natural world, featuring
+                        <span>forests, mountains, rivers, wildlife, oceans, and changing weather</span>
+                        that exist and grow without direct
+                        <span>human influence or creation.</span>
+                    </p>
+            </div>
+            <div class="card history" data-category="Historical">
+                <img src="assets/historical/premium_photo-1697730392744-f02b027471b6.avif" alt="img-15-history">
+                <h2>Historical</h3>
+                    <p>
+                        <span>History</span> reflects the story of human civilization, including
+                        <span>ancient empires, monuments, wars, cultures, and historical events</span>
+                        that shaped the modern world through
+                        <span>time and human achievements.</span>
+                    </p>
+            </div>
+            <div class="card" data-category="Car">
+                <img src="assets/car/bmw/photo-14.jpg" alt="img-2">
+                <h2>BMW</h3>
+                    <p>
+                        <span>BMW</span> is a German luxury automobile brand known for its
+                        <span>high performance, elegant design, advanced engineering, and sporty driving
+                            experience</span>.
+                        One of its iconic features is the
+                        <span>“Devil Eyes” headlights</span>, glowing circular lights that give BMW cars an aggressive
+                        and distinctive appearance.
+                    </p>
+            </div>
+            <div class="card history" data-category="Historical">
+                <img src="assets/historical/karacjhi.jpg" alt="img-2-history">
+                <h2>Historical</h3>
+                    <p>
+                        <span>History</span> reflects the story of human civilization, including
+                        <span>ancient empires, monuments, wars, cultures, and historical events</span>
+                        that shaped the modern world through
+                        <span>time and human achievements.</span>
+                    </p>
+            </div>
+            <div class="card nature" data-category="Nature">
+                <img src="assets/nature/pexels-gary-godfrey-521355561-32784392.jpg" alt="img-2-nature">
+                <h2>Nature</h3>
+                    <p>
+                        <span>Nature</span> includes the beauty and diversity of the natural world, featuring
+                        <span>forests, mountains, rivers, wildlife, oceans, and changing weather</span>
+                        that exist and grow without direct
+                        <span>human influence or creation.</span>
+                    </p>
+            </div>
+            <div class="card" data-category="Culture">
+                <img src="assets/culture/3.jpg" alt="img-4-culture">
+                <h2>Cultural</h3>
+                    <p>
+                        <span>Culture</span> represents the way of life of different communities, including
+                        <span>languages, traditions, clothing, beliefs, art, and social customs</span>
+                        passed from one generation to another through
+                        <span>human interaction and heritage.</span>
+                    </p>
+            </div>
+            <div class="card" data-category="Car">
+                <img src="assets/car/bmw/photo-13.jpg" alt="img-3">
+                <h2>BMW</h3>
+                    <p>
+                        <span>BMW</span> is a German luxury automobile brand known for its
+                        <span>high performance, elegant design, advanced engineering, and sporty driving
+                            experience</span>.
+                        One of its iconic features is the
+                        <span>“Devil Eyes” headlights</span>, glowing circular lights that give BMW cars an aggressive
+                        and distinctive appearance.
+                    </p>
+            </div>
+            <div class="card history" data-category="Historical">
+                <img src="assets/historical/shahikh.jpg" alt="img-15-history">
+                <h2>Historical</h3>
+                    <p>
+                        <span>History</span> reflects the story of human civilization, including
+                        <span>ancient empires, monuments, wars, cultures, and historical events</span>
+                        that shaped the modern world through
+                        <span>time and human achievements.</span>
+                    </p>
+            </div>
+            <div class="card" data-category="Car">
+                <img src="assets/car/bmw/photo-12.jpg" alt="img-4">
+                <h2>BMW</h3>
+                    <p>
+                        <span>BMW</span> is a German luxury automobile brand known for its
+                        <span>high performance, elegant design, advanced engineering, and sporty driving
+                            experience</span>.
+                        One of its iconic features is the
+                        <span>“Devil Eyes” headlights</span>, glowing circular lights that give BMW cars an aggressive
+                        and distinctive appearance.
+                    </p>
+            </div>
+            <div class="card" data-category="Culture">
+                <img src="assets/culture/5.jpg" alt="img-6-culture">
+                <h2>Cultural</h3>
+                    <p>
+                        <span>Culture</span> represents the way of life of different communities, including
+                        <span>languages, traditions, clothing, beliefs, art, and social customs</span>
+                        passed from one generation to another through
+                        <span>human interaction and heritage.</span>
+                    </p>
+            </div>
+            <div class="card nature" data-category="Festival">
+                <img src="assets/festival/10.jpg" alt="img-3-festival">
+                <h2>Festivals</h3>
+                    <p>
+                        <span>Festivals</span> are cultural and religious celebrations that bring people together
+                        through
+                        <span>traditions, music, food, rituals, and joyful events</span>
+                        representing the spirit and values of different
+                        <span>communities and societies.</span>
+                    </p>
+            </div>
+            <div class="card history" data-category="Historical">
+                <img src="assets/historical/photo-4.jpg" alt="img-4-history">
+                <h2>Historical</h3>
+                    <p>
+                        <span>History</span> reflects the story of human civilization, including
+                        <span>ancient empires, monuments, wars, cultures, and historical events</span>
+                        that shaped the modern world through
+                        <span>time and human achievements.</span>
+                    </p>
+            </div>
+            <div class="card" data-category="Culture">
+                <img src="assets/culture/6.jpg" alt="img-5-culture">
+                <h2>Cultural</h3>
+                    <p>
+                        <span>Culture</span> represents the way of life of different communities, including
+                        <span>languages, traditions, clothing, beliefs, art, and social customs</span>
+                        passed from one generation to another through
+                        <span>human interaction and heritage.</span>
+                    </p>
+            </div>
+            <div class="card nature" data-category="Nature">
+                <img src="assets/nature/pexels-yasemin-gunes-327517046-17347549.jpg" alt="img-4-nature">
+                <h2>Nature</h3>
+                    <p>
+                        <span>Nature</span> includes the beauty and diversity of the natural world, featuring
+                        <span>forests, mountains, rivers, wildlife, oceans, and changing weather</span>
+                        that exist and grow without direct
+                        <span>human influence or creation.</span>
+                    </p>
+            </div>
+            <div class="card" data-category="Car">
+                <img src="assets/car/bmw/photo-11.jpg" alt="img-5">
+                <h2>BMW</h3>
+                    <p>
+                        <span>BMW</span> is a German luxury automobile brand known for its
+                        <span>high performance, elegant design, advanced engineering, and sporty driving
+                            experience</span>.
+                        One of its iconic features is the
+                        <span>“Devil Eyes” headlights</span>, glowing circular lights that give BMW cars an aggressive
+                        and distinctive appearance.
+                    </p>
+            </div>
+            <div class="card" data-category="Culture">
+                <img src="assets/culture/4.jpg" alt="img-7-culture">
+                <h2>Cultural</h3>
+                    <p>
+                        <span>Culture</span> represents the way of life of different communities, including
+                        <span>languages, traditions, clothing, beliefs, art, and social customs</span>
+                        passed from one generation to another through
+                        <span>human interaction and heritage.</span>
+                    </p>
+            </div>
+            <div class="card history" data-category="Historical">
+                <img src="assets/historical/istockphot.webp" alt="img-5-history">
+                <h2>Historical</h3>
+                    <p>
+                        <span>History</span> reflects the story of human civilization, including
+                        <span>ancient empires, monuments, wars, cultures, and historical events</span>
+                        that shaped the modern world through
+                        <span>time and human achievements.</span>
+                    </p>
+            </div>
+            <div class="card" data-category="Car">
+                <img src="assets/car/bmw/photo-10.jpg" alt="img-6">
+                <h2>BMW</h3>
+                    <p>
+                        <span>BMW</span> is a German luxury automobile brand known for its
+                        <span>high performance, elegant design, advanced engineering, and sporty driving
+                            experience</span>.
+                        One of its iconic features is the
+                        <span>“Devil Eyes” headlights</span>, glowing circular lights that give BMW cars an aggressive
+                        and distinctive appearance.
+                    </p>
+            </div>
+            <div class="card" data-category="Car">
+                <img src="assets/car/bmw/photo-9.jpg" alt="imig-7">
+                <h2>BMW</h3>
+                    <p>
+                        <span>BMW</span> is a German luxury automobile brand known for its
+                        <span>high performance, elegant design, advanced engineering, and sporty driving
+                            experience</span>.
+                        One of its iconic features is the
+                        <span>“Devil Eyes” headlights</span>, glowing circular lights that give BMW cars an aggressive
+                        and distinctive appearance.
+                    </p>
+            </div>
+            <div class="card nature" data-category="Nature">
+                <img src="assets/nature/photo-1433086966358-54859d0ed716.jpg" alt="img-5-nature">
+                <h2>Nature</h3>
+                    <p>
+                        <span>Nature</span> includes the beauty and diversity of the natural world, featuring
+                        <span>forests, mountains, rivers, wildlife, oceans, and changing weather</span>
+                        that exist and grow without direct
+                        <span>human influence or creation.</span>
+                    </p>
+            </div>
+            <div class="card history" data-category="Historical">
+                <img src="assets/historical/rome.jpg" alt="img-6-history">
+                <h2>Historical</h3>
+                    <p>
+                        <span>History</span> reflects the story of human civilization, including
+                        <span>ancient empires, monuments, wars, cultures, and historical events</span>
+                        that shaped the modern world through
+                        <span>time and human achievements.</span>
+                    </p>
+            </div>
+            <div class="card history" data-category="Historical">
+                <img src="assets/historical/gettyimages-2171871315-612x612.jpg" alt="img-7-history">
+                <h2>Historical</h3>
+                    <p>
+                        <span>History</span> reflects the story of human civilization, including
+                        <span>ancient empires, monuments, wars, cultures, and historical events</span>
+                        that shaped the modern world through
+                        <span>time and human achievements.</span>
+                    </p>
+            </div>
+            <div class="card" data-category="Car">
+                <img src="assets/car/bmw/premium_photo-8.jpg" alt="img-8">
+                <h2>BMW</h3>
+                    <p>
+                        <span>BMW</span> is a German luxury automobile brand known for its
+                        <span>high performance, elegant design, advanced engineering, and sporty driving
+                            experience</span>.
+                        One of its iconic features is the
+                        <span>“Devil Eyes” headlights</span>, glowing circular lights that give BMW cars an aggressive
+                        and distinctive appearance.
+                    </p>
+            </div>
+            <div class="card nature" data-category="Festival">
+                <img src="assets/festival/8.jpg" alt="img-4-festival">
+                <h2>Festivals</h3>
+                    <p>
+                        <span>Festivals</span> are cultural and religious celebrations that bring people together
+                        through
+                        <span>traditions, music, food, rituals, and joyful events</span>
+                        representing the spirit and values of different
+                        <span>communities and societies.</span>
+                    </p>
+            </div>
+            <div class="card" data-category="Culture">
+                <img src="assets/culture/7.jpg" alt="img-8-culture">
+                <h2>Cultural</h3>
+                    <p>
+                        <span>Culture</span> represents the way of life of different communities, including
+                        <span>languages, traditions, clothing, beliefs, art, and social customs</span>
+                        passed from one generation to another through
+                        <span>human interaction and heritage.</span>
+                    </p>
+                    passed from one generation to another through
+                    <span>human interaction and heritage.</span>
+                    </p>
+            </div>
+            <div class="card nature" data-category="Nature">
+                <img src="assets/nature/photo-1470071459604-3b5ec3a7fe05.jpg" alt="img-6-nature">
+                <h2>Nature</h3>
+                    <p>
+                        <span>Nature</span> includes the beauty and diversity of the natural world, featuring
+                        <span>forests, mountains, rivers, wildlife, oceans, and changing weather</span>
+                        that exist and grow without direct
+                        <span>human influence or creation.</span>
+                    </p>
+            </div>
+            <div class="card" data-category="Car">
+                <img src="assets/car/bmw/photo-7.jpg" alt="img-9">
+                <h2>BMW</h3>
+                    <p>
+                        <span>BMW</span> is a German luxury automobile brand known for its
+                        <span>high performance, elegant design, advanced engineering, and sporty driving
+                            experience</span>.
+                        One of its iconic features is the
+                        <span>“Devil Eyes” headlights</span>, glowing circular lights that give BMW cars an aggressive
+                        and distinctive appearance.
+                    </p>
+            </div>
+            <div class="card" data-category="Car">
+                <img src="assets/car/bmw/photo-6.jpg" alt="img-10">
+                <h2>BMW</h3>
+                    <p>
+                        <span>BMW</span> is a German luxury automobile brand known for its
+                        <span>high performance, elegant design, advanced engineering, and sporty driving
+                            experience</span>.
+                        One of its iconic features is the
+                        <span>“Devil Eyes” headlights</span>, glowing circular lights that give BMW cars an aggressive
+                        and distinctive appearance.
+                    </p>
+            </div>
+            <div class="card history" data-category="Historical">
+                <img src="assets/historical/gettyimages-1364091242-612x612.jpg" alt="img-8-history">
+                <h2>Historical</h3>
+                    <p>
+                        <span>History</span> reflects the story of human civilization, including
+                        <span>ancient empires, monuments, wars, cultures, and historical events</span>
+                        that shaped the modern world through
+                        <span>time and human achievements.</span>
+                    </p>
+            </div>
+            <div class="card" data-category="Car">
+                <img src="assets/car/bmw/photo-5.jpg" alt="img-11">
+                <h2>BMW</h3>
+                    <p>
+                        <span>BMW</span> is a German luxury automobile brand known for its
+                        <span>high performance, elegant design, advanced engineering, and sporty driving
+                            experience</span>.
+                        One of its iconic features is the
+                        <span>“Devil Eyes” headlights</span>, glowing circular lights that give BMW cars an aggressive
+                        and distinctive appearance.
+                    </p>
+            </div>
+            <div class="card history" data-category="Historical">
+                <img src="assets/historical/dc.webp" alt="img-9-history">
+                <h2>Historical</h3>
+                    <p>
+                        <span>History</span> reflects the story of human civilization, including
+                        <span>ancient empires, monuments, wars, cultures, and historical events</span>
+                        that shaped the modern world through
+                        <span>time and human achievements.</span>
+                    </p>
+            </div>
+            <div class="card" data-category="Car">
+                <img src="assets/car/bmw/photo-4.jpg" alt="imig-12">
+                <h2>BMW</h3>
+                    <p>
+                        <span>BMW</span> is a German luxury automobile brand known for its
+                        <span>high performance, elegant design, advanced engineering, and sporty driving
+                            experience</span>.
+                        One of its iconic features is the
+                        <span>“Devil Eyes” headlights</span>, glowing circular lights that give BMW cars an aggressive
+                        and distinctive appearance.
+                    </p>
+            </div>
+            <div class="card history" data-category="Historical">
+                <img src="assets/historical/badshahi.jpg" alt="img-10-history">
+                <h2>Historical</h3>
+                    <p>
+                        <span>History</span> reflects the story of human civilization, including
+                        <span>ancient empires, monuments, wars, cultures, and historical events</span>
+                        that shaped the modern world through
+                        <span>time and human achievements.</span>
+                    </p>
+            </div>
+            <div class="card nature" data-category="Festival">
+                <img src="assets/festival/14.jpg" alt="img-6-festival">
+                <h2>Festivals</h3>
+                    <p>
+                        <span>Festivals</span> are cultural and religious celebrations that bring people together
+                        through
+                        <span>traditions, music, food, rituals, and joyful events</span>
+                        representing the spirit and values of different
+                        <span>communities and societies.</span>
+                    </p>
+            </div>
+            <div class="card nature" data-category="Nature">
+                <img src="assets/nature/photo-1518173946687-a4c8892bbd9f.jpg" alt="img-7-nature">
+                <h2>Nature</h3>
+                    <p>
+                        <span>Nature</span> includes the beauty and diversity of the natural world, featuring
+                        <span>forests, mountains, rivers, wildlife, oceans, and changing weather</span>
+                        that exist and grow without direct
+                        <span>human influence or creation.</span>
+                    </p>
+            </div>
+            <div class="card" data-category="Car">
+                <img src="assets/car/bmw/photo-3.jpg" alt="img-13">
+                <h2>BMW</h3>
+                    <p>
+                        <span>BMW</span> is a German luxury automobile brand known for its
+                        <span>high performance, elegant design, advanced engineering, and sporty driving
+                            experience</span>.
+                        One of its iconic features is the
+                        <span>“Devil Eyes” headlights</span>, glowing circular lights that give BMW cars an aggressive
+                        and distinctive appearance.
+                    </p>
+            </div>
+            <div class="card history" data-category="Historical">
+                <img src="assets/historical/photo-rock.jpg" alt="img-11-history">
+                <h2>Historical</h3>
+                    <p>
+                        <span>History</span> reflects the story of human civilization, including
+                        <span>ancient empires, monuments, wars, cultures, and historical events</span>
+                        that shaped the modern world through
+                        <span>time and human achievements.</span>
+                    </p>
+            </div>
+            <div class="card" data-category="Car">
+                <img src="assets/car/bmw/photo-2.jpg" alt="img-14">
+                <h2>BMW</h3>
+                    <p>
+                        <span>BMW</span> is a German luxury automobile brand known for its
+                        <span>high performance, elegant design, advanced engineering, and sporty driving
+                            experience</span>.
+                        One of its iconic features is the
+                        <span>“Devil Eyes” headlights</span>, glowing circular lights that give BMW cars an aggressive
+                        and distinctive appearance.
+                    </p>
+            </div>
+            <div class="card nature" data-category="Nature">
+                <img src="assets/nature/photo-1518495973542-4542c06a5843.jpg" alt="img-8-nature">
+                <h2>Nature</h3>
+                    <p>
+                        <span>Nature</span> includes the beauty and diversity of the natural world, featuring
+                        <span>forests, mountains, rivers, wildlife, oceans, and changing weather</span>
+                        that exist and grow without direct
+                        <span>human influence or creation.</span>
+                    </p>
+            </div>
+            <div class="card" data-category="Car">
+                <img src="assets/car/bmw/premium_photo-1.avif" alt="img-15">
+                <h2>BMW</h3>
+                    <p>
+                        <span>BMW</span> is a German luxury automobile brand known for its
+                        <span>high performance, elegant design, advanced engineering, and sporty driving
+                            experience</span>.
+                        One of its iconic features is the
+                        <span>“Devil Eyes” headlights</span>, glowing circular lights that give BMW cars an aggressive
+                        and distinctive appearance.
+                    </p>
+            </div>
+            <div class="card history" data-category="Historical">
+                <img src="assets/historical/2.jpg" alt="img-12-history">
+                <h2>Historical</h3>
+                    <p>
+                        <span>History</span> reflects the story of human civilization, including
+                        <span>ancient empires, monuments, wars, cultures, and historical events</span>
+                        that shaped the modern world through
+                        <span>time and human achievements.</span>
+                    </p>
+            </div>
+            <div class="card nature" data-category="Festival">
+                <img src="assets/festival/13.jpg" alt="img-5-festival">
+                <h2>Festivals</h3>
+                    <p>
+                        <span>Festivals</span> are cultural and religious celebrations that bring people together
+                        through
+                        <span>traditions, music, food, rituals, and joyful events</span>
+                        representing the spirit and values of different
+                        <span>communities and societies.</span>
+                    </p>
+            </div>
+            <div class="card nature" data-category="Nature">
+                <img src="assets/nature/premium_photo-1673292293042-cafd9c8a3ab3 (1).jpg" alt="img-9-nature">
+                <h2>Nature</h3>
+                    <p>
+                        <span>Nature</span> includes the beauty and diversity of the natural world, featuring
+                        <span>forests, mountains, rivers, wildlife, oceans, and changing weather</span>
+                        that exist and grow without direct
+                        <span>human influence or creation.</span>
+                    </p>
+            </div>
+            <div class="card nature" data-category="Nature">
+                <img src="assets/nature/premium_photo-1711434824963-ca894373272e.jpg" alt="img-10-nature">
+                <h2>Nature</h3>
+                    <p>
+                        <span>Nature</span> includes the beauty and diversity of the natural world, featuring
+                        <span>forests, mountains, rivers, wildlife, oceans, and changing weather</span>
+                        that exist and grow without direct
+                        <span>human influence or creation.</span>
+                    </p>
+            </div>
+        </div>
+    </div>
+    <div class="view-box">
+        <img class="close-btn" src="assets/icons8-cross-30.png" alt="close">
+        <div class="move">
+            <img class="btn preview" src="assets/angle-left-solid.png" alt="preview">
+            <span class="span"></span>
+            <img class="btn next" src="assets/angle-right-solid.png" alt="next">
+        </div>
+        <img src="" alt="" class="big-image">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

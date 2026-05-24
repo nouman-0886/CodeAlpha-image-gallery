@@ -1,0 +1,434 @@
+@font-face {
+    font-family: 'Orange Avenue';
+    src: url('orange-avenue-demo/OrangeAvenueDEMO-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Orange Avenue Outline';
+    src: url('orange-avenue-demo/OrangeAvenueOutlineDEMO-Regular.otf') format('opentype');
+}
+
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hamburger img {
+    width: 60px;
+    position: absolute;
+    display: none;
+    transition: rotate 0.3s ease-in 0.3s;
+}
+
+
+.hamburger img:hover {
+    rotate: 90deg;
+    cursor: pointer;
+}
+
+.close-nav {
+    /* background-color: red; */
+    width: 40px;
+    margin-left: 90%;
+    transition: rotate 0.3s ease-in 0.3s;
+    display: none;
+}
+
+.close-nav:hover {
+    rotate: 90deg;
+    cursor: pointer;
+}
+
+.nav-bar {
+    transition: translateX 0.3s ease-in 0.3s;
+}
+
+nav {
+    width: 100%;
+    background: rgb(81, 81, 233);
+    min-height: 90px;
+    position: fixed;
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: 'Orange Avenue Outline', serif;
+}
+
+/* ================= NAV LINKS ================= */
+
+.categories ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.parent-li {
+    position: relative;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    transition: background 0.2s ease-in;
+    color: white;
+}
+
+.parent-li:hover {
+    cursor: pointer;
+    background: rgb(33 33 157 / 53%);
+}
+
+/* ================= DROPDOWN ================= */
+
+.child-div {
+    background-color: rgb(33 33 157);
+    padding: 10px;
+    border-radius: 8px;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    min-width: 180px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.parent-li:hover .child-div {
+    opacity: 1;
+    visibility: visible;
+}
+
+.child {
+    border-radius: 7px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    color: white;
+}
+
+.child:hover {
+    background-color: rgb(81, 81, 233);
+}
+
+/* ================= SEARCH ================= */
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.2s ease-in 0.2s;
+}
+
+
+.search:hover {
+    transform: scale(1.1);
+}
+
+.search input {
+    height: 2.5rem;
+    width: 220px;
+
+    padding: 0 40px 0 15px;
+
+    background: rgb(36 36 199 / 58%);
+    border: none;
+    color: #fff;
+    font-family: 'Orange Avenue Outline', serif;
+    /* outline: 1px solid white; */
+    border-radius: 10px;
+
+    font-size: 1rem;
+}
+
+.search img {
+    width: 20px;
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+}
+
+
+
+
+.containor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card {
+    width: 284px;
+    padding: 15px;
+    background: rgb(81, 81, 233);
+    margin: 15px;
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease-in 0.3s, transform 0.3s ease-in 0.3s;
+
+}
+
+.hide {
+    display: none;
+}
+
+.card:hover {
+    box-shadow: rgb(81, 81, 233) 0px 50px 100px -20px, rgb(81, 81, 233) 0px 30px 60px -30px;
+    transform: scale(1.1);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.card h2 {
+    font-family: 'Orange Avenue Outline', serif;
+}
+
+.custum-card p {
+    font-family: 'Orange Avenue', serif;
+}
+
+.card span {
+    color: #89CFF0;
+    font-family: cursive;
+}
+
+.head-div {
+    color: #000;
+    margin: -5px 40%;
+    font-family: 'Orange Avenue Outline', serif;
+    margin-top: 115px;
+}
+
+.view-box {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.big-image {
+    width: 60%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.close-btn {
+    font-size: 45px;
+    margin-bottom: 23%;
+    z-index: 50;
+    margin-right: -40px;
+    color: rgb(81, 81, 233);
+}
+
+.close-btn {
+    transition: rotate 0.2s ease-in 0.3s;
+}
+
+.close-btn:hover {
+    cursor: pointer;
+    rotate: 90deg;
+}
+
+.move {
+    display: flex;
+    position: absolute;
+}
+
+.move span {
+    width: 50vw;
+    height: 10px;
+}
+
+.move .next,
+.preview {
+    width: 50px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in 0.3s;
+}
+
+.move img:hover {
+    cursor: pointer;
+    background-color: rgb(33 33 157 / 53%);
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        width: 25%;
+    }
+
+    .close-btn {
+        margin-bottom: 160px;
+    }
+
+    .big-image {
+        width: 43%;
+    }
+
+    .card span {
+        width: 35vw;
+    }
+
+    .move {
+        margin-left: 28%;
+    }
+
+    .move .next,
+    .preview {
+        width: 6%;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .close-btn {
+        margin-bottom: 215px;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    .card span {
+        width: 50vw;
+    }
+
+    .move {
+        margin-left: 18%;
+    }
+
+    .move .next,
+    .preview {
+        width: 8%;
+    }
+
+    .big-image {
+        width: 80%;
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .card {
+        width: 75%;
+    }
+
+    .head-div {
+        margin: -5px 34%;
+    }
+}
+
+/* ================= TABLET ================= */
+
+@media(max-width: 992px) {
+
+    nav {
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .head-div {
+        margin-top: 150px;
+    }
+
+    .categories ul {
+        justify-content: center;
+    }
+
+    .parent-li {
+        font-size: 1rem;
+    }
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width: 600px) {
+
+    .navbar {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 300px;
+        /* Adjust based on your design */
+        height: 100vh;
+
+        /* Start the menu hidden off-screen to the right */
+        transform: translateX(100%);
+
+        gap: 0;
+        /* This creates the smooth sliding animation */
+        transition: transform 0.3s ease-in-out;
+    }
+
+
+    .head-div {
+        margin-top: 50px;
+    }
+
+    .hamburger img {
+        display: block;
+    }
+
+    .close-nav {
+        display: block;
+    }
+
+    .categories ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .parent-li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .child-div {
+        position: static;
+        margin-top: 10px;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+    }
+
+    .parent-li:hover .child-div {
+        display: block;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .search input {
+        width: 100%;
+    }
+}
